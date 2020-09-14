@@ -141,7 +141,7 @@ nav .dropdown-content .dropdown-item{
 	line-height: 1.8;
 }
 #feature .signle-box i{
-	color:#FFC600;
+	color:#FF9E06;
 	font-size: 3rem;
 	margin:20px;
 	transition: transform 0.5s;
@@ -167,7 +167,7 @@ nav .dropdown-content .dropdown-item{
 }
 .service-area .single-service .icon{
 	font-size: 2rem;
-	color:#FFC600;
+	color:#FF9E06;
 }
 .service-area .single-service{
 	position: relative;
