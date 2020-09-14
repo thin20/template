@@ -3,6 +3,7 @@
 }
 html,body{
 	position: relative;
+	font-family: 'Poppins', sans-serif;
 }
 .contact-header{
 	background-color:#5A54B8;
@@ -98,10 +99,26 @@ nav .dropdown-content .dropdown-item{
 .banner .carousel-item img{
 	width:100%;
 }
+.carousel-control-prev{
+	visibility: hidden;
+	position: absolute;
+}
+.carousel-control-next{
+	visibility: hidden;
+	position: absolute;
+}
+.banner:hover .carousel-control-prev{
+	visibility: visible;
+}
+.banner:hover .carousel-control-next{
+	visibility: visible;	
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
 	width: 30px;
 	height: 30px;
+	top:50%;
+	margin-top: -15px;
 }
 .banner .overlay{
 	position: absolute;
@@ -109,4 +126,57 @@ nav .dropdown-content .dropdown-item{
 	width: 100%;
 	top:0;
 	background-color: rgba(0,0,0,0.6);
+}
+
+
+/*phần feature*/
+#feature{
+	margin:30px 0px;
+}
+#feature .signle-box{
+	text-align: center;
+	color:#555;
+	padding:20px;
+	font-size: 80%;
+	line-height: 1.8;
+}
+#feature .signle-box i{
+	color:#FFC600;
+	font-size: 3rem;
+	margin:20px;
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+#feature .signle-box i:hover{
+	transform: scale(1.2);
+}
+#feature .signle-box .separator{
+	border-top:solid 1px rgba(0,0,0,.2);
+	margin:10px 0px;
+}
+
+/*phần service-area*/
+.service-area{
+	background-color: #F7F7F9;
+	padding:70px 0px;
+	font-size: 80%;
+	color:#555;
+}
+.service-area .title-service{
+	margin:0 auto;
+}
+.service-area .single-service .icon{
+	font-size: 2rem;
+	color:#FFC600;
+}
+.service-area .single-service{
+	position: relative;
+	background-color: #fff;	
+	padding:20px;
+	margin-top: 30px;
+	transition: top 1s;
+}
+.service-area .single-service:hover{
+	top:-5px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.2);
 }
