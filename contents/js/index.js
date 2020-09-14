@@ -11,19 +11,22 @@ $(document).ready(function() {
 	var pos_nav = $('nav').offset().top;
 	$(window).scroll(function(event) {
 		var pos = $('html,body').scrollTop();
-		if(pos>pos_nav){
+		if(pos>10){
 			$('nav').css({
 				'opacity': '0.8',
-				'background-color': 'rgba(90, 84, 184, .7)'
+				'background-color': 'rgba(90, 84, 184, .7)',
+				'position':'fixed',
+				'top':'0'
 			});
-			$('.nav-link').addClass('color-white');
+			$('.nav-link').addClass('white-color');
 		}
 		else{
 			$('nav').css({
 				'background-color':'white',	
-				'opacity' : '1'
+				'opacity' : '1',
+				'position':'relative'
 			});
-			$('.nav-link').removeClass('color-white');
+			$('.nav-link').removeClass('white-color');
 		}
 	});
 });

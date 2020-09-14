@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box;
 }
+html,body{
+	position: relative;
+}
 .contact-header{
 	background-color:#5A54B8;
 	color:white;
@@ -34,7 +37,6 @@ nav{
 	width: 100%;
 	position: relative;
 	z-index: 5;
-	padding:0px;
 }
 nav .dropdown{
 	position: relative;
@@ -45,6 +47,7 @@ nav .dropdown-content{
 	box-shadow: 1px 1px 5px #9C9C9C;
 	z-index: 6;
 	opacity: 1;
+	position:absolute;
 }
 nav .dropdown-content .dropdown-item{
 	margin:5px 0px;
@@ -83,7 +86,7 @@ nav .dropdown-content .dropdown-item{
 .nav-link:hover{
 	color:#FFB852 !important;
 }
-.color-white{
+.white-color{
 	color:#FFFFFF !important;
 }
 
