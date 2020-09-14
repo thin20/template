@@ -31,7 +31,10 @@
 
 /*phần nav*/
 nav{
+	width: 100%;
 	position: relative;
+	z-index: 5;
+	padding:0px;
 }
 nav .dropdown{
 	position: relative;
@@ -40,6 +43,8 @@ nav .dropdown{
 nav .dropdown-content{
 	display: none;
 	box-shadow: 1px 1px 5px #9C9C9C;
+	z-index: 6;
+	opacity: 1;
 }
 nav .dropdown-content .dropdown-item{
 	margin:5px 0px;
@@ -59,12 +64,16 @@ nav .dropdown-content .dropdown-item{
 		position: relative;
 		border-radius: 3px;
 	}
+	nav .dropdown-item{
+		color:white;
+	}
 }
 @media screen and (min-width: 992px){
 	nav .dropdown-content{
 		position: absolute;
 		border-radius: 5px;
 		top:100%;
+		background-color: white;
 	}
 }
 .dropdown-item:hover{
@@ -73,4 +82,28 @@ nav .dropdown-content .dropdown-item{
 }
 .nav-link:hover{
 	color:#FFB852 !important;
+}
+.color-white{
+	color:#FFFFFF !important;
+}
+
+
+/*phần banner*/
+.banner{
+	position: relative;
+}
+.banner .carousel-item img{
+	width:100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+	width: 30px;
+	height: 30px;
+}
+.banner .overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	background-color: rgba(0,0,0,0.6);
 }
