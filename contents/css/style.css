@@ -90,6 +90,12 @@ nav .dropdown-content .dropdown-item{
 .white-color{
 	color:#FFFFFF !important;
 }
+nav .nav-item.dropdown .nav-link:after{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	content: "\f078";
+	padding-left:5px;
+}
 
 
 /*phần banner*/
