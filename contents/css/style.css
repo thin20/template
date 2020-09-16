@@ -1,3 +1,4 @@
+/*phần chung*/
 *{
 	box-sizing: border-box;
 }
@@ -5,6 +6,12 @@ html,body{
 	position: relative;
 	font-family: 'Poppins', sans-serif;
 }
+.separator{
+	border-top:solid 1px rgba(0,0,0,.2);
+	margin:10px 0px;
+}
+
+/*phần header*/
 .contact-header{
 	background-color:#5A54B8;
 	color:white;
@@ -156,10 +163,6 @@ nav .nav-item.dropdown .nav-link:after{
 #feature .signle-box i:hover{
 	transform: scale(1.2);
 }
-#feature .signle-box .separator{
-	border-top:solid 1px rgba(0,0,0,.2);
-	margin:10px 0px;
-}
 
 /*phần service-area*/
 .service-area{
@@ -185,4 +188,74 @@ nav .nav-item.dropdown .nav-link:after{
 .service-area .single-service:hover{
 	transform:translateY(-5px);
 	box-shadow: 0px 3px 10px rgba(0,0,0,.2);
+}
+
+
+/*phần project*/
+.project{
+	position: relative;
+	margin-top: 30px;
+}
+.project .col-md-6{
+	margin:0 auto;
+	padding:50px 0px;
+}
+.project .overlay-container img{
+	width: 100%;
+}
+.project .overlay-container{
+	position: relative;
+	overflow: hidden;
+	border:0px;
+	margin:10px;
+}
+.overlay-top{
+	position: absolute;
+	top:-100px;
+	visibility: hidden;	
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 50%;
+	transition: all .3s;
+}
+.overlay-bottom{
+	position: absolute;
+	bottom:-100px;
+	visibility: hidden;
+	background-color: rgba(0,0,0,.5);
+	width: 100%;
+	height: 50%;
+	transition: all .3s;
+}
+.project .overlay-container:hover .overlay-top{
+	visibility: visible;
+	top:0px;
+}
+.project .overlay-container:hover .overlay-bottom{
+	visibility: visible;	
+	bottom:0px;
+}
+.project .overlay-container .text,.links{
+	text-align: center;
+	color:white;
+}
+.project .overlay-container .text{
+	position: relative;
+	padding:10px 0px;
+}
+.project .overlay-container .text a{
+	text-decoration: none;
+	color:white;
+}
+.project .overlay-container .links a{
+	border:1px solid white;
+	border-radius: 10px;
+	text-decoration: none;
+	color:white;
+	position: relative;
+	margin:10px 0px;
+}
+.project .col-md-3.col-sm-6{
+	padding:0!important;
+
 }
